@@ -39,6 +39,14 @@
     border-radius: 15.5%/7%;
   }
   .pitch { max-width: 380px; }
+  .appicon {
+    display: block;
+    width: 74px;
+    /* iOS icon corner curvature. */
+    border-radius: 22.5%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 24px rgba(20, 40, 55, 0.3);
+  }
   .logo {
     font-size: clamp(44px, 6vw, 64px);
     letter-spacing: 0.02em;
@@ -90,6 +98,7 @@
     main { flex-direction: column; gap: 26px; text-align: center; }
     .phone { width: min(240px, 32dvh, 58vw); }
     .pitch { max-width: 320px; }
+    .appicon { width: 64px; margin: 0 auto 16px; }
     .store { margin-top: 20px; }
   }
 </style>
@@ -100,6 +109,7 @@
     <img src="screenshot.png" alt="SeeWord gameplay: the word SEE traced and highlighted across the board">
   </div>
   <div class="pitch">
+    <img class="appicon" src="appicon.png" alt="SeeWord app icon">
     <h1 class="logo"><span class="see">SEE</span><span class="word">WORD</span></h1>
     <p class="blurb">A fun little word game. Slide letters into lines,
     trace them to score, and collect every word you ever find.</p>
