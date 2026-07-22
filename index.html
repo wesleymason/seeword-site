@@ -98,6 +98,7 @@
     text-decoration: none;
   }
   footer a:hover { color: #fff; }
+  footer .legal { display: flex; gap: 12px; }
   @media (max-width: 640px) {
     main { flex-direction: column; gap: 26px; text-align: center; }
     .phone { width: min(240px, 32dvh, 58vw); }
@@ -129,8 +130,10 @@
 </main>
 <footer>
   <span>&copy; 2026 Wes Mason. All rights reserved.</span>
-  <a href="privacy.html">Privacy policy</a>
-  <a href="terms.html">Terms</a>
+  <nav class="legal">
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
 </footer>
 </body>
 </html>
